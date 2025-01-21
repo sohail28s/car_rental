@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rent a Car</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/booking.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#" class="logo">
+              <img src="assets/logo-white.png" alt="logo" class="logo-white" />
+              <img src="assets/logo-dark.png" alt="logo" class="logo-dark" />
+              <span>Car Rental</span>
+            </a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <div class="nav__btns">
+          <a href="booking.html"><button class="btn">Rent a Car</button></a>
+        </div>
+      </nav>
+    </header>
+    <main class="section__container1">
+      <h1 class="section__header">Rent a Car</h1>
+      <p class="section__description">
+        Please fill out the form below to rent a car. We'll send you a
+        confirmation email shortly.
+      </p>
+      <form id="rentCarForm">
+        <div class="input__group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="user_name"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="input__group">
+          <label for="number">Phone Number</label>
+          <input
+            type="tel"
+            name="user_number"
+            id="number"
+            placeholder="Enter your phone number"
+            required
+          />
+        </div>
+        <div class="input__group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="user_email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <label for="car_company">Car Company</label>
+        <select id="car_company" name="car_company" required>
+          <option value="" disabled selected>Select a car company</option>
+          <option value="toyota">Toyota</option>
+          <option value="honda">Honda</option>
+          <option value="hyundai">Hyundai</option>
+          <option value="kia">KIA</option>
+          <option value="suzuki">Suzuki</option>
+        </select>
+
+        <label for="car_model">Car Model</label>
+        <select id="car_model" name="car_model" required>
+          <option value="" disabled selected>Select a car model</option>
+        </select>
+
+        <div class="input__group">
+          <label for="branch">Branch</label>
+          <select name="user_branch" id="branch" required>
+            <option value="">Select a branch</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Karachi">Karachi</option>
+            <option value="Lahore">Lahore</option>
+            <option value="Bahawalpur">Bahawalpur</option>
+            <option value="Multan">Multan</option>
+          </select>
+        </div>
+        <label for="rental_datetime">Rental Date & Time</label>
+        <input
+          type="datetime-local"
+          id="rental_datetime"
+          name="rental_datetime"
+          required
+        />
+
+        <button id="submitBtn" class="btn" type="submit">Submit</button>
+      </form>
+    </main>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="js/booking.js"></script>
+  </body>
+</html>
