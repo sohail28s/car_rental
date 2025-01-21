@@ -14,13 +14,8 @@ JavaScript: Adds dynamic functionality for selecting car models based on the car
 EmailJS: Service to send emails directly from the client-side, providing confirmation emails to users.
 Swiper: A touch-friendly carousel slider for displaying cars or other content dynamically.
 ScrollReveal: Adds scroll-triggered animations to elements on the page for a smooth user experience.
-Setup and Installation
-Clone the repository:
 
-bash
-Copy
-Edit
-git clone https://github.com/sohail28s/car-rental.git
+
 Navigate to the project directory:
 
 bash
