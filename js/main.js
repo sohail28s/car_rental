@@ -106,6 +106,6 @@ ScrollReveal().reveal(".subscribe__content form", {
 
 const swiper = new Swiper(".swiper", {
   slidesPerView: 3,
-  spaceBetween: 20,
+  spaceBetween: 10,
   loop: true,
 });
